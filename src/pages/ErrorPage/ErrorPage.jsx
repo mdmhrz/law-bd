@@ -21,7 +21,7 @@ const ErrorPage = () => {
                 </p>
                 <button
                     onClick={() => navigate('/')}
-                    className="btn btn-primary"
+                    className="btn bg-green-600 border-none text-white hover:bg-green-700 transition-all"
                 >
                     Return to Homepage
                 </button>

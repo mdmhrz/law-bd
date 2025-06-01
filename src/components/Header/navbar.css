@@ -1,11 +1,21 @@
 ul a.active {
     color: black;
     /* padding: 8px 10px; */
-    background-color: rgb(227, 230, 227);
+    border-bottom: 4px solid green;
     font-weight: bold;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    overflow: hidden;
+
 }
 
 ul a {
     padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul a:hover {
+    background-color: rgb(235, 236, 235);
+    border-radius: 5px;
+
+
 }
