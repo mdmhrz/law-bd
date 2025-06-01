@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import './navbar.css'
 
 const Navbar = () => {
@@ -14,10 +14,10 @@ const Navbar = () => {
 
 
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar w-11/12 mx-auto p-0 border-b-2 py-3 mb-8 border-gray-200">
             <div className="navbar-start">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                    <div tabIndex={0} role="button" className="md:p-0 btn btn-ghost lg:hidden mr-4">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                     </div>
                     <ul
@@ -26,10 +26,10 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">
+                <Link to='/' className='flex items-center justify-center gap-2'>
                     <img src="/src/assets/logo.png" alt="" />
                     <h1 className='font-bold text-2xl'>Law.BD</h1>
-                </a>
+                </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
