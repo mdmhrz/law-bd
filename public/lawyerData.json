@@ -1,0 +1,754 @@
+[
+    {
+        "id": 1,
+        "name": "Ahmed Alvi",
+        "expertise": "Environmental Law",
+        "license_no": "EN-9431200001",
+        "status": "Available",
+        "experience": 22,
+        "availability": [
+            "Saturday",
+            "Sunday",
+            "Tuesday",
+            "Monday"
+        ],
+        "fee": 3997,
+        "image": "https://example.com/lawyers/ahmed_alvi.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Hassan Khan",
+        "expertise": "Property Law",
+        "license_no": "PR-5733200002",
+        "status": "Available",
+        "experience": 8,
+        "availability": [
+            "Saturday",
+            "Sunday",
+            "Monday",
+            "Thursday"
+        ],
+        "fee": 1126,
+        "image": "https://example.com/lawyers/hassan_khan.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Mariam Karim",
+        "expertise": "Corporate Law",
+        "license_no": "CO-9635000003",
+        "status": "Not Available",
+        "experience": 25,
+        "availability": [
+            "Sunday",
+            "Thursday",
+            "Saturday"
+        ],
+        "fee": 3125,
+        "image": "https://example.com/lawyers/mariam_karim.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Rafiqul Islam",
+        "expertise": "Criminal Law",
+        "license_no": "CR-1234500004",
+        "status": "Available",
+        "experience": 15,
+        "availability": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+        ],
+        "fee": 2500,
+        "image": "https://example.com/lawyers/rafiqul_islam.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Nusrat Jahan",
+        "expertise": "Family Law",
+        "license_no": "FA-6789000005",
+        "status": "Available",
+        "experience": 10,
+        "availability": [
+            "Tuesday",
+            "Thursday",
+            "Saturday"
+        ],
+        "fee": 1800,
+        "image": "https://example.com/lawyers/nusrat_jahan.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Kamal Hossain",
+        "expertise": "Constitutional Law",
+        "license_no": "CN-2345600006",
+        "status": "Available",
+        "experience": 30,
+        "availability": [
+            "Sunday",
+            "Monday",
+            "Wednesday"
+        ],
+        "fee": 4500,
+        "image": "https://example.com/lawyers/kamal_hossain.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Farhana Yasmin",
+        "expertise": "Labor Law",
+        "license_no": "LA-7890100007",
+        "status": "Not Available",
+        "experience": 12,
+        "availability": [
+            "Monday",
+            "Tuesday",
+            "Friday"
+        ],
+        "fee": 2200,
+        "image": "https://example.com/lawyers/farhana_yasmin.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Arif Rahman",
+        "expertise": "Tax Law",
+        "license_no": "TX-3456700008",
+        "status": "Available",
+        "experience": 18,
+        "availability": [
+            "Wednesday",
+            "Thursday",
+            "Saturday"
+        ],
+        "fee": 3500,
+        "image": "https://example.com/lawyers/arif_rahman.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Tasnim Ahmed",
+        "expertise": "Intellectual Property",
+        "license_no": "IP-8901200009",
+        "status": "Available",
+        "experience": 7,
+        "availability": [
+            "Sunday",
+            "Tuesday",
+            "Friday"
+        ],
+        "fee": 2800,
+        "image": "https://example.com/lawyers/tasnim_ahmed.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Sajid Chowdhury",
+        "expertise": "Immigration Law",
+        "license_no": "IM-4567800010",
+        "status": "Available",
+        "experience": 14,
+        "availability": [
+            "Monday",
+            "Wednesday",
+            "Thursday"
+        ],
+        "fee": 3200,
+        "image": "https://example.com/lawyers/sajid_chowdhury.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Nazia Sultana",
+        "expertise": "Human Rights Law",
+        "license_no": "HR-9012300011",
+        "status": "Available",
+        "experience": 9,
+        "availability": [
+            "Tuesday",
+            "Thursday",
+            "Saturday"
+        ],
+        "fee": 2100,
+        "image": "https://example.com/lawyers/nazia_sultana.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Imran Ali",
+        "expertise": "Cyber Law",
+        "license_no": "CY-5678900012",
+        "status": "Available",
+        "experience": 6,
+        "availability": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+        ],
+        "fee": 2900,
+        "image": "https://example.com/lawyers/imran_ali.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Sabrina Haque",
+        "expertise": "Banking Law",
+        "license_no": "BK-0123400013",
+        "status": "Not Available",
+        "experience": 11,
+        "availability": [
+            "Sunday",
+            "Tuesday",
+            "Thursday"
+        ],
+        "fee": 2600,
+        "image": "https://example.com/lawyers/sabrina_haque.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Jamil Ahmed",
+        "expertise": "Contract Law",
+        "license_no": "CT-6789000014",
+        "status": "Available",
+        "experience": 19,
+        "availability": [
+            "Monday",
+            "Wednesday",
+            "Saturday"
+        ],
+        "fee": 3800,
+        "image": "https://example.com/lawyers/jamil_ahmed.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Rehana Akter",
+        "expertise": "Family Law",
+        "license_no": "FA-1234500015",
+        "status": "Available",
+        "experience": 13,
+        "availability": [
+            "Tuesday",
+            "Friday",
+            "Sunday"
+        ],
+        "fee": 2300,
+        "image": "https://example.com/lawyers/rehana_akter.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Faisal Mahmud",
+        "expertise": "Corporate Law",
+        "license_no": "CO-7890100016",
+        "status": "Available",
+        "experience": 16,
+        "availability": [
+            "Wednesday",
+            "Thursday",
+            "Saturday"
+        ],
+        "fee": 4100,
+        "image": "https://example.com/lawyers/faisal_mahmud.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Sharmin Akter",
+        "expertise": "Property Law",
+        "license_no": "PR-2345600017",
+        "status": "Available",
+        "experience": 8,
+        "availability": [
+            "Monday",
+            "Tuesday",
+            "Friday"
+        ],
+        "fee": 1900,
+        "image": "https://example.com/lawyers/sharmin_akter.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Rashidul Hasan",
+        "expertise": "Criminal Law",
+        "license_no": "CR-8901200018",
+        "status": "Available",
+        "experience": 22,
+        "availability": [
+            "Sunday",
+            "Wednesday",
+            "Thursday"
+        ],
+        "fee": 3700,
+        "image": "https://example.com/lawyers/rashidul_hasan.jpg"
+    },
+    {
+        "id": 19,
+        "name": "Tahmina Rahman",
+        "expertise": "Environmental Law",
+        "license_no": "EN-3456700019",
+        "status": "Not Available",
+        "experience": 14,
+        "availability": [
+            "Tuesday",
+            "Thursday",
+            "Saturday"
+        ],
+        "fee": 3300,
+        "image": "https://example.com/lawyers/tahmina_rahman.jpg"
+    },
+    {
+        "id": 20,
+        "name": "Asif Iqbal",
+        "expertise": "Tax Law",
+        "license_no": "TX-9012300020",
+        "status": "Available",
+        "experience": 17,
+        "availability": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+        ],
+        "fee": 3900,
+        "image": "https://example.com/lawyers/asif_iqbal.jpg"
+    },
+    {
+        "id": 21,
+        "name": "Nadia Islam",
+        "expertise": "Human Rights Law",
+        "license_no": "HR-5678900021",
+        "status": "Available",
+        "experience": 10,
+        "availability": [
+            "Sunday",
+            "Tuesday",
+            "Thursday"
+        ],
+        "fee": 2700,
+        "image": "https://example.com/lawyers/nadia_islam.jpg"
+    },
+    {
+        "id": 22,
+        "name": "Saifuddin Ahmed",
+        "expertise": "Immigration Law",
+        "license_no": "IM-0123400022",
+        "status": "Available",
+        "experience": 12,
+        "availability": [
+            "Monday",
+            "Wednesday",
+            "Saturday"
+        ],
+        "fee": 3100,
+        "image": "https://example.com/lawyers/saifuddin_ahmed.jpg"
+    },
+    {
+        "id": 23,
+        "name": "Farzana Begum",
+        "expertise": "Labor Law",
+        "license_no": "LA-6789000023",
+        "status": "Available",
+        "experience": 9,
+        "availability": [
+            "Tuesday",
+            "Friday",
+            "Sunday"
+        ],
+        "fee": 2400,
+        "image": "https://example.com/lawyers/farzana_begum.jpg"
+    },
+    {
+        "id": 24,
+        "name": "Mahmudul Haque",
+        "expertise": "Cyber Law",
+        "license_no": "CY-1234500024",
+        "status": "Available",
+        "experience": 7,
+        "availability": [
+            "Wednesday",
+            "Thursday",
+            "Saturday"
+        ],
+        "fee": 2900,
+        "image": "https://example.com/lawyers/mahmudul_haque.jpg"
+    },
+    {
+        "id": 25,
+        "name": "Shirin Sultana",
+        "expertise": "Banking Law",
+        "license_no": "BK-7890100025",
+        "status": "Not Available",
+        "experience": 15,
+        "availability": [
+            "Monday",
+            "Tuesday",
+            "Friday"
+        ],
+        "fee": 3600,
+        "image": "https://example.com/lawyers/shirin_sultana.jpg"
+    },
+    {
+        "id": 26,
+        "name": "Abdul Matin",
+        "expertise": "Contract Law",
+        "license_no": "CT-2345600026",
+        "status": "Available",
+        "experience": 20,
+        "availability": [
+            "Sunday",
+            "Wednesday",
+            "Thursday"
+        ],
+        "fee": 4200,
+        "image": "https://example.com/lawyers/abdul_matin.jpg"
+    },
+    {
+        "id": 27,
+        "name": "Nusrat Fatima",
+        "expertise": "Family Law",
+        "license_no": "FA-8901200027",
+        "status": "Available",
+        "experience": 11,
+        "availability": [
+            "Tuesday",
+            "Thursday",
+            "Saturday"
+        ],
+        "fee": 2500,
+        "image": "https://example.com/lawyers/nusrat_fatima.jpg"
+    },
+    {
+        "id": 28,
+        "name": "Rafiq Khan",
+        "expertise": "Corporate Law",
+        "license_no": "CO-3456700028",
+        "status": "Available",
+        "experience": 18,
+        "availability": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+        ],
+        "fee": 4000,
+        "image": "https://example.com/lawyers/rafiq_khan.jpg"
+    },
+    {
+        "id": 29,
+        "name": "Shahana Akter",
+        "expertise": "Property Law",
+        "license_no": "PR-9012300029",
+        "status": "Available",
+        "experience": 8,
+        "availability": [
+            "Sunday",
+            "Tuesday",
+            "Thursday"
+        ],
+        "fee": 2000,
+        "image": "https://example.com/lawyers/shahana_akter.jpg"
+    },
+    {
+        "id": 30,
+        "name": "Kamrul Hasan",
+        "expertise": "Criminal Law",
+        "license_no": "CR-5678900030",
+        "status": "Available",
+        "experience": 16,
+        "availability": [
+            "Monday",
+            "Wednesday",
+            "Saturday"
+        ],
+        "fee": 3800,
+        "image": "https://example.com/lawyers/kamrul_hasan.jpg"
+    },
+    {
+        "id": 31,
+        "name": "Nasrin Jahan",
+        "expertise": "Environmental Law",
+        "license_no": "EN-0123400031",
+        "status": "Not Available",
+        "experience": 13,
+        "availability": [
+            "Tuesday",
+            "Friday",
+            "Sunday"
+        ],
+        "fee": 3400,
+        "image": "https://example.com/lawyers/nasrin_jahan.jpg"
+    },
+    {
+        "id": 32,
+        "name": "Tareq Rahman",
+        "expertise": "Tax Law",
+        "license_no": "TX-6789000032",
+        "status": "Available",
+        "experience": 19,
+        "availability": [
+            "Wednesday",
+            "Thursday",
+            "Saturday"
+        ],
+        "fee": 4100,
+        "image": "https://example.com/lawyers/tareq_rahman.jpg"
+    },
+    {
+        "id": 33,
+        "name": "Farida Akter",
+        "expertise": "Human Rights Law",
+        "license_no": "HR-1234500033",
+        "status": "Available",
+        "experience": 10,
+        "availability": [
+            "Monday",
+            "Tuesday",
+            "Friday"
+        ],
+        "fee": 2800,
+        "image": "https://example.com/lawyers/farida_akter.jpg"
+    },
+    {
+        "id": 34,
+        "name": "Shafiqul Islam",
+        "expertise": "Immigration Law",
+        "license_no": "IM-7890100034",
+        "status": "Available",
+        "experience": 14,
+        "availability": [
+            "Sunday",
+            "Wednesday",
+            "Thursday"
+        ],
+        "fee": 3200,
+        "image": "https://example.com/lawyers/shafiqul_islam.jpg"
+    },
+    {
+        "id": 35,
+        "name": "Rina Begum",
+        "expertise": "Labor Law",
+        "license_no": "LA-2345600035",
+        "status": "Available",
+        "experience": 9,
+        "availability": [
+            "Tuesday",
+            "Thursday",
+            "Saturday"
+        ],
+        "fee": 2500,
+        "image": "https://example.com/lawyers/rina_begum.jpg"
+    },
+    {
+        "id": 36,
+        "name": "Jahangir Alam",
+        "expertise": "Cyber Law",
+        "license_no": "CY-8901200036",
+        "status": "Available",
+        "experience": 7,
+        "availability": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+        ],
+        "fee": 3000,
+        "image": "https://example.com/lawyers/jahangir_alam.jpg"
+    },
+    {
+        "id": 37,
+        "name": "Shabnam Akter",
+        "expertise": "Banking Law",
+        "license_no": "BK-3456700037",
+        "status": "Not Available",
+        "experience": 12,
+        "availability": [
+            "Sunday",
+            "Tuesday",
+            "Thursday"
+        ],
+        "fee": 3700,
+        "image": "https://example.com/lawyers/shabnam_akter.jpg"
+    },
+    {
+        "id": 38,
+        "name": "Mizanur Rahman",
+        "expertise": "Contract Law",
+        "license_no": "CT-9012300038",
+        "status": "Available",
+        "experience": 21,
+        "availability": [
+            "Monday",
+            "Wednesday",
+            "Saturday"
+        ],
+        "fee": 4300,
+        "image": "https://example.com/lawyers/mizanur_rahman.jpg"
+    },
+    {
+        "id": 39,
+        "name": "Nazma Begum",
+        "expertise": "Family Law",
+        "license_no": "FA-5678900039",
+        "status": "Available",
+        "experience": 11,
+        "availability": [
+            "Tuesday",
+            "Friday",
+            "Sunday"
+        ],
+        "fee": 2600,
+        "image": "https://example.com/lawyers/nazma_begum.jpg"
+    },
+    {
+        "id": 40,
+        "name": "Shahriar Ahmed",
+        "expertise": "Corporate Law",
+        "license_no": "CO-0123400040",
+        "status": "Available",
+        "experience": 17,
+        "availability": [
+            "Wednesday",
+            "Thursday",
+            "Saturday"
+        ],
+        "fee": 3900,
+        "image": "https://example.com/lawyers/shahriar_ahmed.jpg"
+    },
+    {
+        "id": 41,
+        "name": "Fahmida Khan",
+        "expertise": "Property Law",
+        "license_no": "PR-6789000041",
+        "status": "Available",
+        "experience": 8,
+        "availability": [
+            "Monday",
+            "Tuesday",
+            "Friday"
+        ],
+        "fee": 2100,
+        "image": "https://example.com/lawyers/fahmida_khan.jpg"
+    },
+    {
+        "id": 42,
+        "name": "Azad Hossain",
+        "expertise": "Criminal Law",
+        "license_no": "CR-1234500042",
+        "status": "Available",
+        "experience": 15,
+        "availability": [
+            "Sunday",
+            "Wednesday",
+            "Thursday"
+        ],
+        "fee": 3600,
+        "image": "https://example.com/lawyers/azad_hossain.jpg"
+    },
+    {
+        "id": 43,
+        "name": "Rukhsana Rahman",
+        "expertise": "Environmental Law",
+        "license_no": "EN-7890100043",
+        "status": "Not Available",
+        "experience": 13,
+        "availability": [
+            "Tuesday",
+            "Thursday",
+            "Saturday"
+        ],
+        "fee": 3500,
+        "image": "https://example.com/lawyers/rukhsana_rahman.jpg"
+    },
+    {
+        "id": 44,
+        "name": "Salam Khan",
+        "expertise": "Tax Law",
+        "license_no": "TX-2345600044",
+        "status": "Available",
+        "experience": 18,
+        "availability": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+        ],
+        "fee": 4000,
+        "image": "https://example.com/lawyers/salam_khan.jpg"
+    },
+    {
+        "id": 45,
+        "name": "Nigar Sultana",
+        "expertise": "Human Rights Law",
+        "license_no": "HR-8901200045",
+        "status": "Available",
+        "experience": 10,
+        "availability": [
+            "Sunday",
+            "Tuesday",
+            "Thursday"
+        ],
+        "fee": 2900,
+        "image": "https://example.com/lawyers/nigar_sultana.jpg"
+    },
+    {
+        "id": 46,
+        "name": "Rafiq Sheikh",
+        "expertise": "Immigration Law",
+        "license_no": "IM-3456700046",
+        "status": "Available",
+        "experience": 14,
+        "availability": [
+            "Monday",
+            "Wednesday",
+            "Saturday"
+        ],
+        "fee": 3300,
+        "image": "https://example.com/lawyers/rafiq_sheikh.jpg"
+    },
+    {
+        "id": 47,
+        "name": "Shirin Akter",
+        "expertise": "Labor Law",
+        "license_no": "LA-9012300047",
+        "status": "Available",
+        "experience": 9,
+        "availability": [
+            "Tuesday",
+            "Friday",
+            "Sunday"
+        ],
+        "fee": 2700,
+        "image": "https://example.com/lawyers/shirin_akter.jpg"
+    },
+    {
+        "id": 48,
+        "name": "Mahbub Alam",
+        "expertise": "Cyber Law",
+        "license_no": "CY-5678900048",
+        "status": "Available",
+        "experience": 7,
+        "availability": [
+            "Wednesday",
+            "Thursday",
+            "Saturday"
+        ],
+        "fee": 3100,
+        "image": "https://example.com/lawyers/mahbub_alam.jpg"
+    },
+    {
+        "id": 49,
+        "name": "Naima Chowdhury",
+        "expertise": "Banking Law",
+        "license_no": "BK-0123400049",
+        "status": "Not Available",
+        "experience": 12,
+        "availability": [
+            "Monday",
+            "Tuesday",
+            "Friday"
+        ],
+        "fee": 3800,
+        "image": "https://example.com/lawyers/naima_chowdhury.jpg"
+    },
+    {
+        "id": 50,
+        "name": "Abdul Kader",
+        "expertise": "Contract Law",
+        "license_no": "CT-6789000050",
+        "status": "Available",
+        "experience": 20,
+        "availability": [
+            "Sunday",
+            "Wednesday",
+            "Thursday"
+        ],
+        "fee": 4400,
+        "image": "https://example.com/lawyers/abdul_kader.jpg"
+    }
+]
