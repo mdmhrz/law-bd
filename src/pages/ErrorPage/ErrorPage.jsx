@@ -1,25 +1,31 @@
 import React from 'react';
-// import { Button } from '@/components/ui/button'; // shadcn/ui or your button component
 import { useNavigate } from 'react-router';
 
 const ErrorPage = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen bg-gray-100 px-4 text-center">
+        <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-white px-4 md:px-10 text-gray-800 gap-10">
             <img
-                src="https://illustrations.popsy.co/gray/error.svg"
-                alt="Error Illustration"
-                className="max-w-xs md:max-w-md mb-6"
+                src="/src/assets/404.png" // Place your image here
+                alt="Error cat"
+                className="w-[60] md:w-80 lg:w-100 xl:w-[700px] mb-6 md:mb-0"
             />
-            <h1 className="text-4xl font-bold text-gray-800 mb-2">Oops! Something went wrong</h1>
-            <p className="text-gray-600 text-lg mb-6">
-                We couldn’t find the page you were looking for. It might have been removed or temporarily unavailable.
-            </p>
-            {/* <Button >
-                Go back home
-            </Button> */}
-            <button onClick={() => navigate('/')} className="text-white bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-2xl shadow-md">Go back home</button>
+            <div className="md:ml-10 text-center md:text-left">
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-red-600 mb-8">Oops.</h1>
+                <p className="text-lg font-semibold text-red-500 mb-2">
+                    We can’t find the page you’re looking for.
+                </p>
+                <p className="text-gray-600 mb-4 max-w-md">
+                    It may have expired, or there could be a typo. Maybe you can find what you need from our homepage.
+                </p>
+                <button
+                    onClick={() => navigate('/')}
+                    className="btn btn-primary"
+                >
+                    Return to Homepage
+                </button>
+            </div>
         </div>
     );
 };
