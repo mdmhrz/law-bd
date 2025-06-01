@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import Banner from '../../components/Banner/Banner';
-import BestLawyers from '../../components/BestLawyers/BestLawyers';
+import BestLawyers from '../BestLawyers/BestLawyers';
 import { useLoaderData } from 'react-router';
 
 const Home = () => {

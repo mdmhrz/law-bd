@@ -1,9 +1,10 @@
 import React, { Suspense } from 'react';
+import { Link } from 'react-router';
 
 const Lawyer = ({ lawyer }) => {
     // console.log(lawyer);
 
-    const { status, experience, name, expertise, license_no } = lawyer;
+    const { id, status, experience, name, expertise, license_no } = lawyer;
 
     return (
         <Suspense fallback={<span className='loading loading-ring loading-xl'></span>}>
@@ -17,9 +18,11 @@ const Lawyer = ({ lawyer }) => {
                         <p className='bg-blue-100 text-[12px] px-4 py-2  text-blue-700 rounded-xl'>{experience}+ Years Experience</p>
                     </div>
                     <h4 className='font-bold text-xl'>{name}</h4>
-                    <p >Criminal Expert</p>
+                    <p >{expertise}</p>
                     <p className='mb-3 text-[14px]'>&#174; License No: {license_no} </p>
-                    <button className='btn w-full border border-blue-100 rounded-3xl hover:bg-blue-400 hover:text-white text-blue-600 transition-normal'>View Details</button>
+                    <Link to={`/lawyerDetails/${id}`}>
+                        <button className='btn w-full border border-blue-100 rounded-3xl hover:bg-blue-400 hover:text-white text-blue-600 transition-normal'>View Details</button>
+                    </Link>
                 </div>
             </div>
         </Suspense>
