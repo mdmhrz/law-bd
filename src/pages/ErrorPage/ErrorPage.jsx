@@ -5,11 +5,11 @@ const ErrorPage = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-white px-4 md:px-10 text-gray-800 gap-10">
+        <div className="flex flex-col lg:flex-row items-center justify-center min-h-screen bg-white px-4 md:px-10 text-gray-800 gap-10">
             <img
                 src="/src/assets/404.png" // Place your image here
                 alt="Error cat"
-                className="w-[60] md:w-80 lg:w-100 xl:w-[700px] mb-6 md:mb-0"
+                className="w-60 md:w-120 lg:w-100 xl:w-[700px] mb-6 md:mb-0"
             />
             <div className="md:ml-10 text-center md:text-left">
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-red-600 mb-8">Oops.</h1>
