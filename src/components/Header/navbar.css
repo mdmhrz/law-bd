@@ -1,0 +1,11 @@
+ul a.active {
+    color: black;
+    /* padding: 8px 10px; */
+    background-color: rgb(227, 230, 227);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+ul a {
+    padding: 8px 16px;
+}

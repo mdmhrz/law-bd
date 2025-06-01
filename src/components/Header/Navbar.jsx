@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router';
+import './navbar.css'
 
 const Navbar = () => {
 
@@ -9,6 +10,8 @@ const Navbar = () => {
         <NavLink to="/blogs" className="ml-10">Blogs</NavLink>
         <NavLink to="/contacts" className="ml-10">Contact Us</NavLink>
     </>
+
+
 
     return (
         <div className="navbar bg-base-100 shadow-sm">
@@ -23,7 +26,10 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <a className="btn btn-ghost text-xl">
+                    <img src="/src/assets/logo.png" alt="" />
+                    <h1 className='font-bold text-2xl'>Law.BD</h1>
+                </a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -31,7 +37,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <a className="btn bg-green-600 text-white">Contact Now</a>
             </div>
         </div>
     );
