@@ -24,11 +24,6 @@ const MyBookings = () => {
     };
 
 
-
-
-
-
-
     const data = useLoaderData();
 
     useEffect(() => {
