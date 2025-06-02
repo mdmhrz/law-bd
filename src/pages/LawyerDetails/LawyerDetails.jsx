@@ -2,6 +2,7 @@ import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { CiCircleAlert } from "react-icons/ci";
 import { addToStoreDB } from '../../utilities/addToDB';
+import { Bounce, toast } from 'react-toastify';
 
 const LawyerDetails = () => {
     const { id } = useParams();
@@ -15,6 +16,17 @@ const LawyerDetails = () => {
 
     const handleBookAppointment = () => {
         addToStoreDB(id)
+        toast.success('Appointment Booked Successfully', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        });
     }
 
     return (

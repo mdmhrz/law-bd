@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import { getBookedAppointment } from '../../utilities/addToDB';
 import Appointments from '../AppointmentsList/Appointments';
+import { Bounce, toast } from 'react-toastify';
 
 const MyBookings = () => {
 
@@ -21,6 +22,18 @@ const MyBookings = () => {
         // Update local state (assuming appointmentList is from React state)
         const remainingAppointments = appointmentList.filter((item) => item.id !== id);
         setAppointmentList(remainingAppointments);
+
+        toast.error('Appointment canceled', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        });
     };
 
 
