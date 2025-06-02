@@ -16,7 +16,7 @@ const LawyerDetails = () => {
 
     const handleBookAppointment = () => {
         addToStoreDB(id)
-        toast.success('Appointment Booked Successfully', {
+        toast.success(`Appointment Scheduled for ${name} Successfully`, {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,

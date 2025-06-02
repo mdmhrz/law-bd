@@ -14,7 +14,7 @@ const Appointments = ({ lawyersData, handleCancelAppointments }) => {
                     <p className='bg-green-200 py-1 px-4 rounded-2xl text-green-800 font-medium'>Appointment Fee: BDT {fee}</p>
                 </div>
             </div>
-            <button onClick={() => handleCancelAppointments(id)} className='btn btn-error btn-outline rounded-3xl w-full'>Cancel Appointment</button>
+            <button onClick={() => handleCancelAppointments(id, name)} className='btn btn-error btn-outline rounded-3xl w-full'>Cancel Appointment</button>
         </div>
     );
 };
