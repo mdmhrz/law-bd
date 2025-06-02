@@ -50,8 +50,8 @@ const LawyerDetails = () => {
                     <p className='font-bold'>Availability</p>
                     <p className='bg-green-100 rounded-xl py-1 text-[14px] font-medium text-green-600 px-4'>Lawyer Available Today</p>
                 </div>
-                <p className='bg-orange-100 text-orange-400 text-[12px] px-2 rounded-xl p-2 mb-8' > <CiCircleAlert className='inline-flex mr-2' />
-                    Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</p>
+                <button className='bg-orange-100 text-orange-400 text-[12px] px-2 rounded-xl p-2 mb-8 w-auto' > <CiCircleAlert className='inline-flex mr-2' />
+                    Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</button>
                 <div className='w-11/12 mx-auto mb-4'>
                     <button className='cursor-pointer text-center font-medium text-white w-full bg-green-600 px-2 py-2 rounded-3xl'>Book Appointment Now</button>
                 </div>
