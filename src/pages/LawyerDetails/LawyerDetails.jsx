@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { CiCircleAlert } from "react-icons/ci";
+import { addToStoreDB } from '../../utilities/addToDB';
 
 const LawyerDetails = () => {
     const { id } = useParams();
@@ -11,6 +12,10 @@ const LawyerDetails = () => {
 
     const { experience, name, expertise, license_no, availability, fee } = specificLawyer;
     // console.log(specificLawyer);
+
+    const handleBookAppointment = () => {
+        addToStoreDB(id)
+    }
 
     return (
         <div className='max-w-11/12 mx-auto'>
@@ -53,7 +58,7 @@ const LawyerDetails = () => {
                 <button className='bg-orange-100 text-orange-400 text-[12px] px-2 rounded-xl p-2 mb-8 w-auto' > <CiCircleAlert className='inline-flex mr-2' />
                     Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</button>
                 <div className='w-11/12 mx-auto mb-4'>
-                    <button className='cursor-pointer text-center font-medium text-white w-full bg-green-600 px-2 py-2 rounded-3xl'>Book Appointment Now</button>
+                    <button onClick={() => handleBookAppointment(id)} className='cursor-pointer text-center font-medium text-white w-full bg-green-600 px-2 py-2 rounded-3xl'>Book Appointment Now</button>
                 </div>
             </div>
         </div>
