@@ -3,6 +3,7 @@ import Banner from '../../components/Banner/Banner';
 import BestLawyers from '../BestLawyers/BestLawyers';
 import { useLoaderData } from 'react-router';
 import ServiceHistory from '../../components/SerrviceHistory/ServiceHistory';
+import CountUp from 'react-countup';
 
 const Home = () => {
 
@@ -14,7 +15,8 @@ const Home = () => {
             <Suspense>
                 <BestLawyers data={data}></BestLawyers>
             </Suspense>
-            <ServiceHistory></ServiceHistory>
+            {/* <ServiceHistory></ServiceHistory> */}
+            <CountUp></CountUp>
         </div>
     );
 };
