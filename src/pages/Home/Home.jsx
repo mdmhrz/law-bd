@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import Banner from '../../components/Banner/Banner';
 import BestLawyers from '../BestLawyers/BestLawyers';
 import { useLoaderData } from 'react-router';
+import ServiceHistory from '../../components/SerrviceHistory/ServiceHistory';
 
 const Home = () => {
 
@@ -13,6 +14,7 @@ const Home = () => {
             <Suspense>
                 <BestLawyers data={data}></BestLawyers>
             </Suspense>
+            <ServiceHistory></ServiceHistory>
         </div>
     );
 };
