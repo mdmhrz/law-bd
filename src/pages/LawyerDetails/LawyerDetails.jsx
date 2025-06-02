@@ -11,7 +11,7 @@ const LawyerDetails = () => {
     const data = useLoaderData();
     const specificLawyer = data.find(lawyer => lawyer.id === lawyerId);
 
-    const { experience, name, expertise, license_no, availability, fee } = specificLawyer;
+    const { image, experience, name, expertise, license_no, availability, fee } = specificLawyer;
     // console.log(specificLawyer);
 
     const handleBookAppointment = () => {
@@ -35,9 +35,9 @@ const LawyerDetails = () => {
                 <h1 className='text-2xl font-bold'>Lawyer's Profile Details</h1>
                 <p className='text-gray-500'>Book a consultation with our experienced legal expert. With a strong background in various areas of law, our lawyer is dedicated to providing you with trusted legal advice and personalized support tailored to your case.</p>
             </div>
-            <div className='flex border-2 border-gray-200 rounded-xl p-4 gap-4 mb-10'>
+            <div className='flex border-2 border-gray-200 rounded-xl p-4 gap-8 mb-10'>
                 <div className='bg-base-300 p-5 rounded-md flex items-center justify-center'>
-                    <img className='w-[140px]' src="https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/2c/91/92/27/eb/v1_E10/E108R132.jpg?w=500&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=32c5fa37d8c48c13807139bce985f13ef2c519fff51eca3cb5ccd359e8699ffd" alt="" />
+                    <img className='w-[140px] rounded-md' src={image} alt="" />
                 </div>
                 <div>
                     <div className='flex gap-4 mb-3'>
