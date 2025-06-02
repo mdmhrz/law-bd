@@ -8,7 +8,7 @@ const Lawyer = ({ lawyer }) => {
 
     return (
         <Suspense fallback={<span className='loading loading-ring loading-xl'></span>}>
-            <div className='flex border-2 border-gray-200 rounded-xl p-4 gap-4 justify-between'>
+            <div className='flex border-2 border-gray-200 rounded-xl p-4 gap-4 justify-between shadow-lg'>
                 <div className='bg-base-300 p-6 rounded-md flex items-center justify-center'>
                     <img className='w-[140px] rounded-md' src={image} alt="" />
                 </div>

@@ -4,20 +4,19 @@ const Banner = () => {
 
     const bannerStyle = {
         backgroundColor: 'black',
-        backgroundImage: "linear-gradient(to bottom right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.538)), url('/src/assets/banner-img-1.png'",
+        backgroundImage: "linear-gradient(to bottom right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.538)), url('/src/assets/banner-img-1.png')",
         backgroundPosition: 'center',
-        backgroudSize: 'cover',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
         color: 'white',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column',
-        height: '550px',
+        height: 'calc(100vh - 115px)',
         textAlign: 'center',
         borderRadius: '12px',
-
-
-    }
+    };
 
     return (
         <div style={bannerStyle} className='p-10 md:p-14 xl:p-[300px] mb-10'>

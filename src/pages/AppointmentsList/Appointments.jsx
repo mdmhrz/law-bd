@@ -4,7 +4,7 @@ const Appointments = ({ lawyersData, handleCancelAppointments }) => {
     // console.log(lawyersData);
     const { name, expertise, fee, id } = lawyersData;
     return (
-        <div className='border-2 border-gray-200 rounded-xl p-5 mb-8'>
+        <div className='border-2 border-gray-200 rounded-xl p-5 mb-8 shadow-md'>
             <div className='flex justify-between mb-4'>
                 <div>
                     <h2 className='font-bold text-xl'>{name}</h2>

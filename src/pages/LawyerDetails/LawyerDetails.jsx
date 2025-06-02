@@ -31,11 +31,11 @@ const LawyerDetails = () => {
 
     return (
         <div className='max-w-11/12 mx-auto'>
-            <div className='bg-[#f1f1f1] p-10 rounded-xl text-center mb-10'>
+            <div className='bg-[#f1f1f1] p-10 rounded-xl text-center mb-10 shadow-md'>
                 <h1 className='text-2xl font-bold'>Lawyer's Profile Details</h1>
                 <p className='text-gray-500'>Book a consultation with our experienced legal expert. With a strong background in various areas of law, our lawyer is dedicated to providing you with trusted legal advice and personalized support tailored to your case.</p>
             </div>
-            <div className='flex border-2 border-gray-200 rounded-xl p-4 gap-8 mb-10'>
+            <div className='flex border-2 border-gray-200 rounded-xl p-4 gap-8 mb-10 shadow-md'>
                 <div className='bg-base-300 p-5 rounded-md flex items-center justify-center'>
                     <img className='w-[140px] rounded-md' src={image} alt="" />
                 </div>
@@ -59,7 +59,7 @@ const LawyerDetails = () => {
                     <p className='font-medium'>Consultation Fee: <span className='ml-4 text-green-600 font-semibold'>BDT {fee} </span></p>
                 </div>
             </div>
-            <div className='border-2 border-gray-200 rounded-xl p-4 mb-20'>
+            <div className='border-2 border-gray-200 rounded-xl p-4 mb-20 shadow-md'>
                 <div className='border-b-2 border-dashed border-gray-300'>
                     <h2 className='font-bold text-center text-xl mb-3'>Book an Appointment</h2>
                 </div>

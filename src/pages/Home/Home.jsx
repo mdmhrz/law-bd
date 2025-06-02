@@ -2,8 +2,9 @@ import React, { Suspense } from 'react';
 import Banner from '../../components/Banner/Banner';
 import BestLawyers from '../BestLawyers/BestLawyers';
 import { useLoaderData } from 'react-router';
+import StatsCard from '../../components/StatsCard/StatsCard';
 import ServiceHistory from '../../components/SerrviceHistory/ServiceHistory';
-import CountUp from 'react-countup';
+
 
 const Home = () => {
 
@@ -15,8 +16,8 @@ const Home = () => {
             <Suspense>
                 <BestLawyers data={data}></BestLawyers>
             </Suspense>
-            {/* <ServiceHistory></ServiceHistory> */}
-            <CountUp></CountUp>
+            <ServiceHistory></ServiceHistory>
+
         </div>
     );
 };
