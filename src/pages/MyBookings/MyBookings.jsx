@@ -7,25 +7,27 @@ const MyBookings = () => {
 
     const [appointmentList, setAppointmentList] = useState([]);
 
+
     const handleCancelAppointments = (id) => {
+        // Get the current list from localStorage
+        const data = JSON.parse(localStorage.getItem('appointmentList')) || [];
 
-        const data = JSON.parse(localStorage.getItem('appointmentList'));
-        // console.log(data);
-        const updatedData = data.filter((itemId) => itemId.id !== id)
-        console.log(updatedData);
-        console.log(id);
+        // Filter out the canceled appointment by ID
+        const updatedData = data.filter((itemId) => itemId !== String(id));
 
+        // Update localStorage
         localStorage.setItem('appointmentList', JSON.stringify(updatedData));
 
-        // const appointmentsData = getBookedAppointment();
-        // localStorage.removeItem()
-        const remainingAppointments = appointmentList.filter((clicked) => clicked.id !== id);
+        // Update local state (assuming appointmentList is from React state)
+        const remainingAppointments = appointmentList.filter((item) => item.id !== id);
         setAppointmentList(remainingAppointments);
+    };
 
 
 
 
-    }
+
+
 
     const data = useLoaderData();
 
