@@ -51,7 +51,7 @@ const MyBookings = () => {
                             </div>
                             <div className='text-center mb-8 p-10'>
                                 <h1 className='font-bold text-2xl'>My Today Appointments</h1>
-                                <p>Our platform connects you with verified, experienced Lawyers across various specialties — all at your convenience.</p>
+                                <p>Our platform Connects you with verified, experienced Lawyers across various specialties — all at your convenience.</p>
                             </div>
 
                         </div>
