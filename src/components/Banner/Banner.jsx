@@ -19,7 +19,7 @@ const Banner = () => {
     };
 
     return (
-        <div style={bannerStyle} className='p-10 md:p-14 xl:p-[300px] mb-20'>
+        <div style={bannerStyle} className='p-4 md:p-6 lg:p-8 xl:p-10  mb-20'>
             <h1 className='text-4xl  xl:text-5xl font-bold mb-5 leading-14'>It avoids subjective claims or exaggeration that might raise red flags legally</h1>
             <p>Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. Whether it's a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.</p>
         </div>

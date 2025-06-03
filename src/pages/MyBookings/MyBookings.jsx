@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useNavigate } from 'react-router-dom';
 import { getBookedAppointment } from '../../utilities/addToDB';
-import Appointments from '../AppointmentsList/Appointments';
+import Appointments from '../Appointments/Appointments';
 import { Bounce, toast } from 'react-toastify';
 import AppointmentChart from '../../components/AppointmentChart/AppointmentChart';
+import Barchart from '../../components/Barchart/Barchart';
 
 const MyBookings = () => {
     const navigate = useNavigate();
@@ -39,14 +40,21 @@ const MyBookings = () => {
 
     return (
         <div className='max-w-6xl mx-auto px-4'>
-            <AppointmentChart></AppointmentChart>
 
 
             {
                 appointmentList && appointmentList.length > 0 ? (
-                    <div className='text-center mb-8 p-10'>
-                        <h1 className='font-bold text-2xl'>My Today Appointment</h1>
-                        <p>Our platform connects you with verified, experienced Lawyers across various specialties — all at your convenience.</p>
+                    <div>
+                        <div>
+                            <div className='flex items-center justify-center'>
+                                <Barchart appointmentList={appointmentList}></Barchart>
+                            </div>
+                            <div className='text-center mb-8 p-10'>
+                                <h1 className='font-bold text-2xl'>My Today Appointments</h1>
+                                <p>Our platform connects you with verified, experienced Lawyers across various specialties — all at your convenience.</p>
+                            </div>
+
+                        </div>
                     </div>
                 ) : (
                     <section className="text-center mt-16">

@@ -14,7 +14,7 @@ const LawyerDetails = () => {
     const { image, experience, name, expertise, license_no, availability, fee } = specificLawyer;
     // console.log(specificLawyer);
 
-    const handleBookAppointment = () => {
+    const handleBookAppointment = (id) => {
         addToStoreDB(id)
         toast.success(`Appointment Scheduled for ${name} Successfully`, {
             position: "top-right",

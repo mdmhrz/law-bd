@@ -37,7 +37,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn bg-green-600 text-white">Contact Now</a>
+                <a className="btn bg-green-600 rounded-4xl hover:bg-green-700 px-6 text-white">Contact Now</a>
             </div>
         </div>
     );
