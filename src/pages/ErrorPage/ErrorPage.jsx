@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
+import errorImage from '/src/assets/404.png'
+
 
 const ErrorPage = () => {
     const navigate = useNavigate();
@@ -7,7 +9,7 @@ const ErrorPage = () => {
     return (
         <div className="flex flex-col lg:flex-row items-center justify-center min-h-screen bg-white px-4 md:px-10 text-gray-800 gap-10">
             <img
-                src="/src/assets/404.png"
+                src={errorImage}
                 className="w-60 md:w-120 lg:w-100 xl:w-[700px] mb-6 md:mb-0"
             />
             <div className="md:ml-10 text-center md:text-left">

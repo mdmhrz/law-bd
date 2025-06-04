@@ -1,10 +1,11 @@
 import React from 'react';
+import image from '/src/assets/banner-img-1.png'
 
 const Banner = () => {
 
     const bannerStyle = {
         backgroundColor: 'black',
-        backgroundImage: "linear-gradient(to bottom right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.538)), url('/src/assets/banner-img-1.png')",
+        backgroundImage: `linear-gradient(to bottom right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.538)), url(${image})`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',

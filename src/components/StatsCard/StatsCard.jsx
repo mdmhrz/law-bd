@@ -1,24 +1,31 @@
 import React from 'react';
 import CountUp from 'react-countup';
+import lawyersSymbol from "/src/assets/success-doctor.png";
+import reviews from "/src/assets/success-review.png";
+import caseSymbol from "/src/assets/success-patients.png";
+import totalStaff from "/src/assets/success-staffs.png";
+
+
+
 
 const stats = [
     {
-        url: "/src/assets/success-doctor.png",
+        url: lawyersSymbol,
         label: 'Total Lawyer',
         value: 199
     },
     {
-        url: "/src/assets/success-review.png",
+        url: reviews,
         label: 'Total Reviews',
         value: 467
     },
     {
-        url: "/src/assets/success-patients.png",
+        url: caseSymbol,
         label: 'Cases Initiated',
         value: 1900
     },
     {
-        url: "/src/assets/success-staffs.png",
+        url: totalStaff,
         label: 'Total Staffs',
         value: 300
     },
