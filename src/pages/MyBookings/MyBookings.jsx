@@ -57,7 +57,7 @@ const MyBookings = () => {
                         </div>
                     </div>
                 ) : (
-                    <section className="text-center mt-16">
+                    <section className="text-center mt-16 mb-10">
                         <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
                             You Have not Booked any appointment yet
                         </h2>
