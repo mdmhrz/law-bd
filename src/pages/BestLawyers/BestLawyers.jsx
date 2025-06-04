@@ -5,7 +5,7 @@ const BestLawyers = ({ data }) => {
     // console.log(data);
 
     const [showAll, setShowAll] = useState(false);
-    const visibleLawyers = showAll ? data : data.slice(0, 12);
+    const visibleLawyers = showAll ? data : data.slice(0, 6);
 
     return (
         <div className='mb-20'>
