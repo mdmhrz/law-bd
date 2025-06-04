@@ -5,10 +5,13 @@ import App from './App.jsx'
 import { RouterProvider } from 'react-router'
 import { router } from './Routes/Routes.jsx'
 import { Bounce, ToastContainer } from 'react-toastify'
+import { HelmetProvider } from 'react-helmet-async'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
     <ToastContainer
       position="top-right"
       autoClose={5000}

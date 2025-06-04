@@ -4,7 +4,7 @@ import { CiCircleAlert } from "react-icons/ci";
 import { addToStoreDB } from '../../utilities/addToDB';
 import { Bounce, toast } from 'react-toastify';
 import { currentDate } from '../../utilities/currentDate';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const LawyerDetails = () => {
     const { id } = useParams();
