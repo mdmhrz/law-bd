@@ -19,11 +19,11 @@ const TriangleBar = (props) => {
 };
 
 export default function Barchart({ appointmentList }) {
-    console.log(appointmentList);
+    // console.log(appointmentList);
     return (
         <BarChart
             width={1000}
-            height={500}
+            height={400}
             data={appointmentList}
             margin={{
                 top: 20,
