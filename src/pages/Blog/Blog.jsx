@@ -6,7 +6,7 @@ const Blog = ({ data }) => {
             <h1 className='text-xl font-bold border-b-2 border-dashed pb-3 border-gray-400 mb-4'>{data.question}</h1>
             <p className='text-blue-600'>Answer</p>
             <p className='border-b-2 border-dashed pb-3 border-gray-400 mb-2 font-medium'>{data.answer}</p>
-            <p className='text-[12px]'>📆 {data.date}</p>
+            <p className='text-[14px]'>📆 {data.date}</p>
         </div>
     );
 };

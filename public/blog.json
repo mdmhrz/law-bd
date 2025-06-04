@@ -1,52 +1,27 @@
 [
     {
-        "question": "What is React?",
-        "answer": "React is a JavaScript library for building user interfaces. It allows developers to create reusable UI components and manage the state of complex applications efficiently.",
-        "date": "2023-09-12"
+        "question": "What is useState and how does it work in React?",
+        "answer": "The `useState` hook is a built-in React hook that allows you to add state to functional components. It returns a stateful value and a function to update it. When the state is updated using the setter function, the component re-renders to reflect the new state.",
+        "date": "2024-11-19"
     },
     {
-        "question": "What is JSX?",
-        "answer": "JSX stands for JavaScript XML. It allows you to write HTML elements in JavaScript and place them in the DOM without using functions like `createElement()` or `appendChild()`.",
-        "date": "2023-10-05"
+        "question": "What is the purpose of useEffect in React?",
+        "answer": "`useEffect` is a React hook used for handling side effects in functional components. Examples of side effects include data fetching, setting up subscriptions, or manually changing the DOM. The hook takes a function as an argument and can also take a dependency array to control when the effect runs.",
+        "date": "2025-02-07"
     },
     {
-        "question": "What is a component in React?",
-        "answer": "A component is a reusable piece of UI in React. It can be either a class-based component or a functional component and it encapsulates markup, logic, and styling.",
-        "date": "2023-11-18"
+        "question": "What is a custom hook in React and when should you use one?",
+        "answer": "A custom hook is a reusable function that starts with the word 'use' and allows you to extract and reuse logic involving hooks (like `useState`, `useEffect`, etc.) across multiple components. You should use a custom hook when you have logic that is shared between components to keep your code DRY and more maintainable.",
+        "date": "2024-08-23"
     },
     {
-        "question": "What is the difference between props and state?",
-        "answer": "Props are read-only and passed to the component by the parent, while state is managed within the component and can change over time.",
-        "date": "2023-12-02"
+        "question": "Difference between controlled and uncontrolled components. Which one is better?",
+        "answer": "Controlled components are form elements where the form data is handled by the React component via state. Uncontrolled components store their own state internally and are accessed using refs. Controlled components offer better control and validation, making them the preferred choice in most cases, especially for complex forms.",
+        "date": "2025-01-12"
     },
     {
-        "question": "What are hooks in React?",
-        "answer": "Hooks are functions that let you use state and other React features in functional components. Common hooks include useState, useEffect, and useContext.",
-        "date": "2024-01-20"
-    },
-    {
-        "question": "What is useEffect used for?",
-        "answer": "The useEffect hook lets you perform side effects in function components, such as fetching data, updating the DOM, or setting up subscriptions.",
-        "date": "2024-02-15"
-    },
-    {
-        "question": "What is the virtual DOM?",
-        "answer": "The virtual DOM is a lightweight copy of the real DOM. React uses it to optimize updates by comparing changes (diffing) and applying only the necessary updates to the actual DOM.",
-        "date": "2024-03-07"
-    },
-    {
-        "question": "What is lifting state up in React?",
-        "answer": "Lifting state up refers to moving state to a common ancestor component so that multiple child components can share and sync data.",
-        "date": "2024-04-10"
-    },
-    {
-        "question": "What is React Router?",
-        "answer": "React Router is a standard library for routing in React. It enables navigation among views of various components in a React application, using a single-page app architecture.",
-        "date": "2024-05-22"
-    },
-    {
-        "question": "How do you optimize performance in a React app?",
-        "answer": "Performance can be optimized by using techniques like memoization (React.memo), code-splitting, lazy loading, avoiding unnecessary re-renders, and using the useCallback and useMemo hooks.",
-        "date": "2024-06-01"
+        "question": "Tell us something about useFormStatus() in React.",
+        "answer": "`useFormStatus()` is a React hook (specific to React Server Components and React's new form APIs) used to track the status of a form submission. It provides useful status information like `pending`, `success`, or `error`, enabling developers to show loading indicators or messages based on the form’s state.",
+        "date": "2024-10-02"
     }
 ]
