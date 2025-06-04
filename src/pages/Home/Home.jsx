@@ -4,6 +4,8 @@ import BestLawyers from '../BestLawyers/BestLawyers';
 import { useLoaderData } from 'react-router';
 import StatsCard from '../../components/StatsCard/StatsCard';
 import ServiceHistory from '../../components/SerrviceHistory/ServiceHistory';
+import { Helmet } from 'react-helmet-async';
+import GlobalSpinner from '../../components/GlobalSpinner/GlobalSpinner';
 
 
 const Home = () => {
@@ -12,10 +14,14 @@ const Home = () => {
 
     return (
         <>
-
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Home - Law.BD</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <div className='max-w-11/12 mx-auto'>
                 <Banner></Banner>
-                <Suspense>
+                <Suspense fallback={<GlobalSpinner></GlobalSpinner>}>
                     <BestLawyers data={data}></BestLawyers>
                 </Suspense>
                 <ServiceHistory></ServiceHistory>
