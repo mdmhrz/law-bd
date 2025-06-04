@@ -26,7 +26,7 @@ const LawyerDetails = () => {
         <>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>Lawyer Details</title>
+                <title>Lawyer Details - Law.BD</title>
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
             <div className='max-w-11/12 mx-auto'>

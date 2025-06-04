@@ -11,14 +11,17 @@ const Home = () => {
     const data = useLoaderData()
 
     return (
-        <div className='max-w-11/12 mx-auto'>
-            <Banner></Banner>
-            <Suspense>
-                <BestLawyers data={data}></BestLawyers>
-            </Suspense>
-            <ServiceHistory></ServiceHistory>
+        <>
 
-        </div>
+            <div className='max-w-11/12 mx-auto'>
+                <Banner></Banner>
+                <Suspense>
+                    <BestLawyers data={data}></BestLawyers>
+                </Suspense>
+                <ServiceHistory></ServiceHistory>
+
+            </div>
+        </>
     );
 };
 

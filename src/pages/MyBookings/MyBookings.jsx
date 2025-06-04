@@ -3,8 +3,8 @@ import { useLoaderData, useNavigate } from 'react-router-dom';
 import { getBookedAppointment } from '../../utilities/addToDB';
 import Appointments from '../Appointments/Appointments';
 import { Bounce, toast } from 'react-toastify';
-import AppointmentChart from '../../components/AppointmentChart/AppointmentChart';
 import Barchart from '../../components/Barchart/Barchart';
+import { Helmet } from 'react-helmet-async';
 
 const MyBookings = () => {
     const navigate = useNavigate();
@@ -39,51 +39,56 @@ const MyBookings = () => {
     };
 
     return (
-        <div className='max-w-6xl mx-auto px-4'>
-
-
-            {
-                appointmentList && appointmentList.length > 0 ? (
-                    <div>
+        <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>My Booking - Law.BD</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
+            <div className='max-w-6xl mx-auto px-4'>
+                {
+                    appointmentList && appointmentList.length > 0 ? (
                         <div>
-                            <div className='flex items-center justify-center'>
-                                <Barchart appointmentList={appointmentList}></Barchart>
-                            </div>
-                            <div className='text-center mb-8 p-10'>
-                                <h1 className='font-bold text-2xl'>My Today Appointments</h1>
-                                <p>Our platforms Connects you with verified, experienced Lawyers across various specialties — all at your convenience.</p>
-                            </div>
+                            <div>
+                                <div className='flex items-center justify-center'>
+                                    <Barchart appointmentList={appointmentList}></Barchart>
+                                </div>
+                                <div className='text-center mb-8 p-10'>
+                                    <h1 className='font-bold text-2xl'>My Today Appointments</h1>
+                                    <p>Our platforms Connects you with verified, experienced Lawyers across various specialties — all at your convenience.</p>
+                                </div>
 
+                            </div>
                         </div>
-                    </div>
-                ) : (
-                    <section className="text-center mt-16 mb-10">
-                        <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
-                            You Have not Booked any appointment yet
-                        </h2>
-                        <p className="mt-2 text-gray-600 max-w-md mx-auto">
-                            Our platform connects you with verified, experienced Lawyers across various specialties — all at your convenience.
-                        </p>
-                        <button
-                            className="mt-6 px-6 py-2 bg-green-600 text-white rounded-md font-medium hover:bg-green-700 transition"
-                            onClick={() => navigate('/')}
-                        >
-                            Book an Appointment
-                        </button>
-                    </section>
-                )
-            }
+                    ) : (
+                        <section className="text-center mt-16 mb-10">
+                            <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+                                You Have not Booked any appointment yet
+                            </h2>
+                            <p className="mt-2 text-gray-600 max-w-md mx-auto">
+                                Our platform connects you with verified, experienced Lawyers across various specialties — all at your convenience.
+                            </p>
+                            <button
+                                className="mt-6 px-6 py-2 bg-green-600 text-white rounded-md font-medium hover:bg-green-700 transition"
+                                onClick={() => navigate('/')}
+                            >
+                                Book an Appointment
+                            </button>
+                        </section>
+                    )
+                }
 
-            <div>
-                {appointmentList.map((lawyersData, index) => (
-                    <Appointments
-                        key={lawyersData.id || index}
-                        lawyersData={lawyersData}
-                        handleCancelAppointments={handleCancelAppointments}
-                    />
-                ))}
+                <div>
+                    {appointmentList.map((lawyersData, index) => (
+                        <Appointments
+                            key={lawyersData.id || index}
+                            lawyersData={lawyersData}
+                            handleCancelAppointments={handleCancelAppointments}
+                        />
+                    ))}
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 

@@ -1,10 +1,14 @@
-import { createBrowserRouter } from "react-router";
-import Home from "../pages/Home/Home";
-import Root from "../pages/Root/Root";
-import ErrorPage from "../pages/ErrorPage/ErrorPage";
-import MyBookings from "../pages/MyBookings/MyBookings";
-import Blogs from "../pages/Blogs/Blogs";
-import LawyerDetails from "../pages/LawyerDetails/LawyerDetails";
+import { lazy, Suspense } from "react";
+import { createBrowserRouter } from "react-router-dom"; // use "react-router-dom" not "react-router"
+
+const Home = lazy(() => import("../pages/Home/Home"));
+const MyBookings = lazy(() => import("../pages/MyBookings/MyBookings"));
+const Blogs = lazy(() => import("../pages/Blogs/Blogs"));
+const LawyerDetails = lazy(() => import("../pages/LawyerDetails/LawyerDetails"));
+const Root = lazy(() => import("../pages/Root/Root"));
+const ErrorPage = lazy(() => import("../pages/ErrorPage/ErrorPage"));
+import LoadingSpinner from "../components/LoadingSpinner/loadingSpinner";
+
 
 export const router = createBrowserRouter([
     {
@@ -16,12 +20,20 @@ export const router = createBrowserRouter([
                 index: true,
                 loader: () => fetch('/lawyerData.json').then(res => res.json()),
                 path: '/',
-                Component: Home
+                element: <Suspense fallback={<div><span className="loading loading-ball loading-xs"></span>
+                    <span className="loading loading-ball loading-sm"></span>
+                    <span className="loading loading-ball loading-md"></span>
+                    <span className="loading loading-ball loading-lg"></span>
+                    <span className="loading loading-ball loading-xl"></span></div>}>
+                    <Home></Home>
+                </Suspense>
             },
             {
                 path: '/myBookings',
                 loader: () => fetch('/lawyerData.json').then(res => res.json()),
-                Component: MyBookings
+                element: <Suspense fallback={LoadingSpinner}>
+                    <MyBookings></MyBookings>
+                </Suspense>
             },
             {
                 path: '/blogs',
