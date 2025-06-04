@@ -14,7 +14,7 @@ const Banner = () => {
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column',
-        height: 'calc(100vh - 115px)',
+        minHeight: 'calc(100vh - 115px)',
         textAlign: 'center',
         borderRadius: '12px',
     };

@@ -9,7 +9,7 @@ const BestLawyers = ({ data }) => {
 
     return (
         <div className='mb-20'>
-            <div className='text-center px-20 mb-8'>
+            <div className='text-center px-5 md:px-20 mb-8'>
                 <h1 className='text-2xl font-bold'>Our Best Lawyers</h1>
                 <p className='text-[14px]'>Our platform connects you with verified, experienced Lawyers across various specialties — all at your convenience. Whether it's a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.</p>
             </div>
